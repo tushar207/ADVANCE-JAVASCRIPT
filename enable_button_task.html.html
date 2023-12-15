@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="button" id="btn01" value="OK">
+    </form>
+    <button onclick="disablebtn()">Disable</button>
+    <button onclick="enablebtn()">Enable</button>
+    
+    <script>
+        function disablebtn() {
+            document.getElementById("btn01").disabled = true;
+        }
+        function enablebtn() {
+            document.getElementById("btn01").disabled = false;
+        }
+    </script>
+</body>
+</html>

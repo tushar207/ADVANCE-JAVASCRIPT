@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ----------------------------------single inheritance-----------------------------------------
+
+    //     class abc{
+    //         sum(){
+    //             var a = 10;
+    //             var b = 20;
+    //             var sum;
+    //             sum = a+b;
+    //             document.write(sum);
+    //         }
+    //     }
+    //     class xyz extends abc{
+    //         multi(){
+    //             var x = 20;
+    //             var y = 20;
+    //             var multi;
+    //             multi = x*y;
+    //             document.write(multi);
+    //         }
+    //     }
+
+    //     const obj= new xyz();
+    //     obj.sum();
+    //     obj.multi();
+
+    // <!-- -------------------------------------multi inheritance----------------------------------------- -->
+
+        class abc{
+            sum(){
+                var a = 10;
+                var b = 20;
+                var sum;
+                sum = a+b;
+                document.write(sum);
+            }
+        }
+        class xyz extends abc{
+            multi(){
+                var x = 20;
+                var y = 20;
+                var multi;
+                multi = x*y;
+                document.write(multi);
+            }
+        }
+        const obj= new xyz();
+        obj.sum();
+        obj.multi();
+
+        class mno extends xyz{
+            div(){
+                var a = 49;
+                var b = 7;
+                var div;
+                div = x/y;
+                document.write(div);
+            }
+        }
+        const obj1= new mno();
+        obj.sum();
+        obj.multi();
+        obj.div();
+
+        // -------------------------------------Hierachil Inheritance-----------------------------------
+
+        
+
+
+     </script>
+
+
+
+</body>
+</html>

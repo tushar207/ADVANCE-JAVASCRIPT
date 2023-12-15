@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+        function simple(marks) {
+            document.write("my mark is :" + marks)
+        }
+        simple(78)
+    </script> -->
+
+
+    <script>
+        function person(first, last, age, eye) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.eyeColor = eye;
+            document.write(first)
+        }
+        const myFather = new person("John", "Doe", 50, "blue")
+        document.write(myFather.firstname);
+    </script>
+
+</body>
+</html>

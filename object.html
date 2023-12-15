@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        json=`{"id":102, "name":"shaym kumar", "salary":40000}`;
+        console.log(json);
+
+        obj={id:102, name:"shaym kumar", salary:40000};
+        console.log(obj);
+        document.write(obj.id+ " "+obj.name+ " "+obj.salary+ " " + "<br>")
+        for(property in obj){
+            document.write(obj[property]);
+        }
+
+
+        obj_arr=[
+                {id:101, name:"Raj kumar", salary:40000},
+                {id:102, name:"Shaym kumar", salary:40000},
+                {id:103, name:"Ram kumar", salary:40000}
+            ];
+            document.write(obj_arr[2].id+" "+obj_arr[2].name+" "+obj_arr[2].salary+"<br><br><br>");
+            for(data of obj_arr)
+            {
+            document.write(data.id+ " "+data.name+ " "+data.salary+ + "<br>");
+            }
+
+
+            
+    </script>
+</body>
+</html>

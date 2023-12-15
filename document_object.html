@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM--documents object model -->
+
+
+    <!-- <p id="demo">click the button</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+           document.getElementById("demo").innerHTML = "Cookies associated with this document: " + document.cookie; 
+        }
+    </script> -->
+
+
+
+    <!-- <p id="demo1">click the button</p>
+    <button onclick="myFunction1()">Try it</button>
+    <p id="demo1"></p>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = document.domain;
+        }
+    </script> -->
+
+
+
+    <!-- <p> this document was last modified <span id="demo2"></span>.</p>
+    <script>
+        document.getElementById("demo2").innerHTML = document.lastModified;
+    </script> -->
+
+
+
+
+    <!-- <p id="demo3"></p>
+    <script>
+        document.getElementById("demo3").innerHTML ="the title of this documnet is:" + document.title;
+    </script>
+    <br>
+    <br>
+
+    <p>the full URL of this document is: <br><span id="demo4"></span>'</p>
+    <script>
+        document.getElementById("demo4").innerHTML = document.URL;
+    </script> -->
+
+
+
+    <!-- <button onclick="myFunction2()">try it</button>
+    <script>
+        function myFunction2() {
+            document.open("text/html", "replace");
+            document.write("<h2> learning about the HTML DOM is fun!</h2>");
+            document.close();
+        }
+    </script> -->
+
+
+
+    <!-- <a href="mailto:heetmodh.tops@gmail.com">Email</a> -->
+
+    <!-- _________________________________________________________________________________________________________________________ -->
+
+    <!-- <h2>Finding HTML Elements Using document.anchors</h2>
+
+    <a href="falana.html" name="html">HTML Tutorial</a><br>
+    <a href="#" name="css">CSS Tutorial</a><br>
+    <a href="#" name="xml">XML Tutorial</a><br>
+
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+
+    <script>
+        document.getElementById("demo6").innerHTML = "number of anchors are: " + document.anchors[0].innerHTML;
+
+        document.getElementById("demo7").innerHTML = "number of links " + document.links.length;
+
+        document.getElementById("demo8").innerHTML = "the href of the first link is " + document.links[0].href;
+    </script> -->
+
+
+<!-- _________________________________________________________________________________________________________________________ -->
+
+
+<!-- --------------------------------------------forms-------------------------------------------------- -->
+<!-- <script>
+    function getforms() {
+        var abc = document.forms['myform']['abc'].value;
+        document.getElementById("demo9").innerHTML = "Name is" + abc;
+
+        var abc = document.forms['myform']['xyz'].value;
+        document.getElementById("demo10").innerHTML = "Email is" + xyz;
+        return false;
+    }
+</script>
+
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+<form name="myform" action="" onsubmit="return getforms()">
+    Name: <input type="text" name="abc"><br><br>
+    Email:<input type="text" name="xyz"><br><br>
+    <input type="submit" name="submit"><br><br>
+</form> -->
+
+<!-- --------------------------------------------forms-------------------------------------------------- -->
+
+
+<!-- --------------------------------------------Images-------------------------------------------------- -->
+
+<!-- <img id="img1" src="pic_html.jpg" alt="" width="400" height="250">
+<img id="img2" src="pic_html.jpg" alt="" width="400" height="250">
+
+<p id="demo11"></p>
+<p id="demo12"></p>
+<script>
+    document.getElementById("demo11").innerHTML = document.images.length;
+    document.getElementById("demo12").innerHTML = document.images[0].id;
+</script> -->
+
+<!-- --------------------------------------------Images---------------------------------------------------->
+
+
+<!-- --------------------------------------------background color---------------------------------------------------->
+
+<!-- <script>
+    function bgchange(bg) {
+        document.body.style.background = bg;
+    }
+</script>
+<table style="width:300px; height:100px;">
+    <tr>
+        <td onmouseout="bgchange(this.style.backgroundcolor)"
+         onmouseover="bgchange('transparent')"
+          style="background-color:black ;">
+        </td>
+
+        <td onmouseover="bgchange(this.style.backgroundcolor)"
+         onmouseout="bgchange('transparent')"
+          style="background-color: blue;">
+        </td>
+        <td onmouseover="bgchange(this.style.backgroundcolor)"
+         onmouseout="bgchange('transparent')"
+          style="background-color:red ;">
+        </td>
+    </tr>
+</table> -->
+
+<!-- --------------------------------------------background color---------------------------------------------------->
+
+<form>
+    <input type="button" id="btn01" value="OK">
+</form>
+<button onclick="disablebtn()">Disable</button>
+
+<script>
+    function disablebtn() {
+        document.getElementById("btn01").disabled = true;
+    }
+</script>
+
+</body>
+</html>

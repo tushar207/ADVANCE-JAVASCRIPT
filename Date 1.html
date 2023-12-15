@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // --------------------------------only date ---------------------------------
+        const d = new Date();
+        let text3 = d.toLocaleDateString();
+        document.write(text3 + "<br>");
+        // -------------------------------------------------------------------------------
+        // ---------------------------------only time-----------------------------------------
+
+        let text4 = d.toLocaleTimeString();
+        document.write(text4 + "<br>");
+        // -------------------------------------------------------------------------------
+        // ---------------------------------date and time-----------------------------------------
+
+        let text = d.toLocaleString();
+        document.write(text + "<br>");
+        // -------------------------------------------------------------------------------
+        // --------------------------------date and time and day------------------------------------------
+
+        let text5 = d.toDateString();
+        document.write(text5 + "<br>");
+        // -------------------------------------------------------------------------------
+        // ---------------------------------time with timezone-----------------------------------------
+
+        let text2 = d.toISOString();
+        document.write(text2 + "<br>");
+        // -------------------------------------------------------------------------------
+        // ---------------------------------time with timezone-----------------------------------------
+
+        let text1 = d.toJSON();  //JSON = java script object notation
+        document.write(text1 + "<br>");
+        // -------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

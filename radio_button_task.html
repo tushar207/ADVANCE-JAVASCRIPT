@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getElements() {
+            var x = document.getElementByName("x");
+            if (x[0].checked == true){
+                document.getElementById('demo5').innerHTML = 'Cats';
+            }
+            else if (x[1].checked == true) {
+                document.getElementById('demo5').innerHTML = 'Dogs';  
+            }
+            else{
+                document.getElementById('demo5').innerHTML = 'Not Selected'; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Cats: <input name="x" type="radio" value="Cats">
+        Dogs: <input name="x" type="radio" value="Dogs">
+    </p>
+
+    <p>
+        <input type="button" onclick="getElements()" value="How many elements named x?">
+    </p>
+
+    <p id="demo5"></p>
+</body>
+</html>
